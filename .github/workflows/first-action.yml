@@ -1,0 +1,15 @@
+# Name of workflow
+name: First Workflow
+
+# Specify when the workflow will be executed (workflow_dispatch allows user to manually kick off workflow)
+on: workflow_dispatch
+
+jobs:
+  first-job:
+    # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greeting
+        run: echo "Hello World!"
+      - name: Print Goodbye
+        run: echo "Goodbye!"
