@@ -1,4 +1,4 @@
-name: Second Workflows
+name: Second Workflow
 
 on: workflow_dispatch
 
@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: actions/github-actions-studying
+        uses: actions/github-actions-studying@v1
         with:
           who-to-greet: 'Mona the Octocat'
       - run: echo random-numer "$RANDOM_NUMBER"
